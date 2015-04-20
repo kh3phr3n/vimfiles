@@ -1,0 +1,143 @@
+" File: ~/.vim/vimrc
+" Description: Vim configuration file
+" Documentation: http://vimdoc.sourceforge.net/htmldoc/
+
+" Not VI compatible
+set nocompatible
+
+" File type settings
+syntax on
+filetype on
+filetype plugin indent on
+
+" Section: Options
+" ----------------
+
+" Cursor position
+set ruler
+" Text displaying
+set nowrap
+" Enable the use of mouse
+set mouse=a
+" Fast terminal connection
+set ttyfast
+" Show (partial) command
+set showcmd
+" Automatically read file
+set autoread
+" Automatically save file
+set autowrite
+" Show matching brackets
+set showmatch
+
+" Search features
+set hlsearch
+set incsearch
+set ignorecase
+
+" Not redraw while macros
+set lazyredraw
+" Minimal lines cursor
+set scrolloff=1
+" Enable status line
+set laststatus=2
+" No jump to first character
+set nostartofline
+
+" No backup, swap files
+set nobackup
+set noswapfile
+set nowritebackup
+
+" Display line number
+set number
+set numberwidth=1
+
+" Replace tabs with spaces
+set expandtab
+set autoindent
+
+" 4 real spaces
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
+
+" Toggle paste mode
+set pastetoggle=<F1>
+
+" Options ~/.viminfo
+set viminfo='20,\"50
+" Everything wraps
+set whichwrap=<,>,[,]
+
+" Levels of indentation
+set foldlevel=99
+set foldmethod=indent
+
+" File encoding
+set encoding=utf-8
+set fileencoding=utf-8
+
+" Line ending characters
+set fileformats=unix,dos,mac
+" Fold and vertical symbols
+set fillchars=fold:\ ,vert:\|
+
+" Command-line completion
+set wildmenu
+set wildmode=longest:full,full
+
+" Popup menu
+set pumheight=15
+set completeopt=longest,menuone
+
+" Enable key <Backspace>
+set backspace=indent,eol,start
+" Tabstops, EOLs and Trails
+set listchars=tab:▸\ ,eol:¬,trail:·
+" Dictionary word completion
+set dictionary+=/usr/share/dict/words
+
+" Statusline (Inspired by statline.vim)
+set statusline+=%<%f%h%m%r\ [%{strlen(&ft)?&ft:'none'}]
+set statusline+=[%{&fileformat}→%{strlen(&fenc)?&fenc:&enc}]
+set statusline+=%=L%l/%L:C%c\ %P
+
+" Section: Mappings
+" -----------------
+
+" Toggle listchars symbols
+nnoremap <F2> :set list!<CR>
+
+" Use Ctrl-S for saving
+noremap  <C-S>      :update<CR>
+vnoremap <C-S> <C-C>:update<CR>
+inoremap <C-S> <C-O>:update<CR>
+
+" Section: Autocommands
+" ---------------------
+
+if has('autocmd')
+    " Remove all trailing whitespace
+    autocmd BufWritePre * :%s/\s\+$//e
+
+    " Change current directory
+    autocmd BufEnter * silent! lcd %:p:h
+
+    " Omni-completion - CTRL-X_CTRL-O
+    autocmd FileType c          setlocal omnifunc=ccomplete#Complete
+    autocmd FileType sql        setlocal omnifunc=sqlcomplete#Complete
+    autocmd FileType php        setlocal omnifunc=phpcomplete#CompletePHP
+    autocmd FileType css        setlocal omnifunc=csscomplete#CompleteCSS
+    autocmd FileType xml        setlocal omnifunc=xmlcomplete#CompleteTags
+    autocmd FileType html       setlocal omnifunc=htmlcomplete#CompleteTags
+    autocmd FileType python     setlocal omnifunc=python3complete#Complete
+    autocmd FileType ruby,eruby setlocal omnifunc=rubycomplete#Complete
+    autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
+endif
+
+" Include user's local Vim config
+if filereadable(expand('~/.vim/vimrc.local'))
+    source ~/.vim/vimrc.local
+endif
+

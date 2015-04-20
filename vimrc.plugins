@@ -1,0 +1,36 @@
+" File: ~/.vim/vimrc.plugins
+" Description: Vim 3rd-party plugins
+" Documentation: https://github.com/gmarik/vundle.vim
+
+" Initialize Vundle manager
+set rtp+=~/.vim/plugins/vundle.vim
+call vundle#begin('~/.vim/plugins')
+
+" Vundle manage Vundle
+Plugin 'gmarik/vundle.vim'
+
+" Vim snippets
+Plugin 'sirver/ultisnips'
+Plugin 'honza/vim-snippets'
+
+" Vim tools
+Plugin 'majutsushi/tagbar'
+Plugin 'godlygeek/tabular'
+Plugin 'scrooloose/nerdtree'
+Plugin 'davidhalter/jedi-vim'
+Plugin 'scrooloose/syntastic'
+Plugin 'raimondi/delimitmate'
+Plugin 'tpope/vim-commentary'
+Plugin 'itchyny/lightline.vim'
+Plugin 'kh3phr3n/python-syntax'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'shougo/neocomplete.vim'
+
+" Vim web
+Plugin 'hail2u/vim-css3-syntax'
+Plugin 'othree/html5-syntax.vim'
+Plugin 'pangloss/vim-javascript'
+
+" End process
+call vundle#end()
+
