@@ -10,7 +10,7 @@ endif
 " Not VI compatible
 set nocompatible
 " Dark color scheme
-colorscheme tomorrow-night
+colorscheme today-night
 
 " File type settings
 syntax on
