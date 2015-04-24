@@ -141,15 +141,10 @@ vnoremap <C-S> <C-C>:update<CR>
 inoremap <C-S> <C-O>:update<CR>
 
 " Splits navigation (Normal)
-nnoremap <silent> <S-Up>    :wincmd k<CR>
-nnoremap <silent> <S-Down>  :wincmd j<CR>
-nnoremap <silent> <S-Left>  :wincmd h<CR>
-nnoremap <silent> <S-Right> :wincmd l<CR>
-" Splits navigation (Insert)
-inoremap <silent> <S-Up>    <C-O>:wincmd k<CR>
-inoremap <silent> <S-Down>  <C-O>:wincmd j<CR>
-inoremap <silent> <S-Left>  <C-O>:wincmd h<CR>
-inoremap <silent> <S-Right> <C-O>:wincmd l<CR>
+nnoremap <silent> <C-H> :wincmd h<CR>
+nnoremap <silent> <C-J> :wincmd j<CR>
+nnoremap <silent> <C-K> :wincmd k<CR>
+nnoremap <silent> <C-L> :wincmd l<CR>
 
 " Tabs navigation (Normal)
 nnoremap <silent> <C-t>     :tabnew<CR>
