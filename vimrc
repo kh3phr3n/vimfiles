@@ -147,13 +147,9 @@ nnoremap <silent> <C-K> :wincmd k<CR>
 nnoremap <silent> <C-L> :wincmd l<CR>
 
 " Tabs navigation (Normal)
-nnoremap <silent> <C-t>     :tabnew<CR>
-nnoremap <silent> <C-Right> :tabnext<CR>
-nnoremap <silent> <C-Left>  :tabprevious<CR>
-" Tabs navigation (Insert)
-inoremap <silent> <C-t>     <C-O>:tabnew<CR>
-inoremap <silent> <C-Right> <C-O>:tabnext<CR>
-inoremap <silent> <C-Left>  <C-O>:tabprevious<CR>
+nnoremap <silent> <C-T> :tabnew<CR>
+nnoremap <silent> <C-N> :tabnext<CR>
+nnoremap <silent> <C-B> :tabprevious<CR>
 
 " Section: Plugins
 " ----------------
