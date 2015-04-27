@@ -16,6 +16,7 @@ Plugin 'honza/vim-snippets'
 " Vim tools
 Plugin 'majutsushi/tagbar'
 Plugin 'godlygeek/tabular'
+Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'davidhalter/jedi-vim'
 Plugin 'scrooloose/syntastic'
