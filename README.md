@@ -1,2 +1,5 @@
-# vimfiles
+vimfiles
+========
+
 Vim configuration files
+
