@@ -36,8 +36,6 @@ set autoread
 set autowrite
 " Show matching brackets
 set showmatch
-" Hide message modes
-set noshowmode
 
 " Search features
 set hlsearch
@@ -199,12 +197,6 @@ let g:UltiSnipsEditSplit='vertical'
 let g:UltiSnipsExpandTrigger='<Tab>'
 let g:UltiSnipsJumpForwardTrigger='<Tab>'
 let g:UltiSnipsJumpBackwardTrigger='<S-Tab>'
-
-" Lightline options
-let g:lightline={
-    \ 'colorscheme': 'Tomorrow_Night',
-    \ 'enable': {'tabline': 0, 'statusline': 1}
-    \ }
 
 " NeoComplete options
 let g:neocomplete#enable_at_startup=1
