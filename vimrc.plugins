@@ -14,6 +14,7 @@ Plugin 'sirver/ultisnips'
 Plugin 'honza/vim-snippets'
 
 " Vim tools
+Plugin 'kh3phr3n/tabline'
 Plugin 'majutsushi/tagbar'
 Plugin 'godlygeek/tabular'
 Plugin 'ctrlpvim/ctrlp.vim'
