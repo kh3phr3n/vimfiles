@@ -222,8 +222,9 @@ if has('autocmd')
     " Change current directory
     autocmd BufEnter * silent! lcd %:p:h
 
-    " Jedi/Django settings
-    autocmd FileType html   setlocal filetype=htmldjango
+    " Python/Django settings
+    autocmd FileType html   setlocal filetype=html.htmldjango
+    autocmd FileType python setlocal filetype=python.django
     autocmd FileType python setlocal completeopt-=preview
     autocmd FileType python setlocal omnifunc=jedi#completions
 
