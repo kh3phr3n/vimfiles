@@ -192,8 +192,9 @@ let g:syntastic_enable_highlighting=0
 " Syntastic mode
 let g:syntastic_mode_map={'mode': 'passive'}
 
-" UltiSnips options/triggers
-let g:UltiSnipsEditSplit='vertical'
+" UltiSnips options
+let g:UltiSnipsUsePythonVersion=3
+" UltiSnips triggers
 let g:UltiSnipsExpandTrigger='<Tab>'
 let g:UltiSnipsJumpForwardTrigger='<Tab>'
 let g:UltiSnipsJumpBackwardTrigger='<S-Tab>'
