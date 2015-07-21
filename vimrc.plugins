@@ -28,6 +28,7 @@ Plugin 'tpope/vim-commentary'
 Plugin 'kh3phr3n/python-syntax'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'shougo/neocomplete.vim'
+Plugin 'itspriddle/vim-stripper'
 
 " Vim web
 Plugin 'hail2u/vim-css3-syntax'

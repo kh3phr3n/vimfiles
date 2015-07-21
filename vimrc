@@ -217,9 +217,6 @@ let g:neocomplete#force_omni_input_patterns.python=
 " ---------------------
 
 if has('autocmd')
-    " Remove all trailing whitespace
-    autocmd BufWritePre * :%s/\s\+$//e
-
     " Change current directory
     autocmd BufEnter * silent! lcd %:p:h
 
