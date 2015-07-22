@@ -114,14 +114,14 @@ set statusline+=%=L%l/%L:C%c\ %P
 " -----------------
 
 " Close all folds
-nnoremap <F7> zM
+nnoremap <F6> zM
 " Open all folds
-nnoremap <F8> zR
+nnoremap <F7> zR
 " Open/Close fold
 nnoremap <2-LeftMouse> za
 
 " Toggle listchars symbols
-nnoremap <F6> :set list!<CR>
+nnoremap <F8> :set list!<CR>
 " Toggle Tagbar panel
 nnoremap <F2> :TagbarToggle<CR>
 " Toggle NERDTree panel
