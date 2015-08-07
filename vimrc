@@ -168,19 +168,20 @@ let g:tagbar_width=35
 let g:tagbar_compact=1
 let g:tagbar_iconchars=['▸', '▾']
 
-" Jedi-vim options
-let g:jedi#popup_on_dot=0
-let g:jedi#force_py_version=3
-let g:jedi#show_call_signatures=2
-" NeoComplete requirements
-let g:jedi#completions_enabled=0
-let g:jedi#auto_vim_configuration=0
-
 " GitGutter options
 let g:gitgutter_sign_added='+'
 let g:gitgutter_sign_removed='-'
 let g:gitgutter_sign_modified='~'
 let g:gitgutter_sign_modified_removed='±'
+
+" NeoComplete requirements
+let g:jedi#completions_enabled=0
+let g:jedi#auto_vim_configuration=0
+" Jedi-vim options
+let g:jedi#popup_on_dot=0
+let g:jedi#force_py_version=3
+let g:jedi#show_call_signatures=2
+let g:jedi#use_splits_not_buffers='winwidth'
 
 " Syntastic symbols
 let g:syntastic_error_symbol='●'
