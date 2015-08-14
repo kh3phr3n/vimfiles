@@ -75,7 +75,7 @@ set viminfo='20,\"50
 set whichwrap=<,>,[,]
 
 " Toggle paste mode
-set pastetoggle=<F10>
+set pastetoggle=<F12>
 
 " Levels of indentation
 set foldlevel=99
