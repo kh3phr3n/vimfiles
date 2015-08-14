@@ -69,13 +69,13 @@ set tabstop=4
 set shiftwidth=4
 set softtabstop=4
 
-" Toggle paste mode
-set pastetoggle=<F9>
-
 " Options ~/.viminfo
 set viminfo='20,\"50
 " Everything wraps
 set whichwrap=<,>,[,]
+
+" Toggle paste mode
+set pastetoggle=<F10>
 
 " Levels of indentation
 set foldlevel=99
@@ -121,7 +121,7 @@ nnoremap <F7> zR
 nnoremap <2-LeftMouse> za
 
 " Toggle listchars symbols
-nnoremap <F8> :set list!<CR>
+nnoremap <F9> :set list!<CR>
 " Toggle Tagbar panel
 nnoremap <F2> :TagbarToggle<CR>
 " Toggle NERDTree panel
@@ -130,6 +130,8 @@ nnoremap <F1> :NERDTreeToggle<CR>
 nnoremap <F4> :GitGutterToggle<CR>
 " Toggle NeoComplete auto
 nnoremap <F3> :NeoCompleteToggle<CR>
+" Toggle indentLine guides
+nnoremap <F8> :IndentLinesToggle<CR>
 " Toggle Syntastic checker
 nnoremap <F5> :SyntasticToggleMode<CR>
 
@@ -154,6 +156,9 @@ nnoremap <silent> <C-B> :tabprevious<CR>
 
 " <Leader> key
 let g:mapleader=','
+
+" Disable indentLine
+let g:indentLine_enabled=0
 
 " Python syntax
 let g:python_highlight_all=1
