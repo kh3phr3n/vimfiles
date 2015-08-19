@@ -1,6 +1,5 @@
 " File: ~/.vim/gvimrc
 " Description: GVim configuration file
-" Documentation: http://vimdoc.sourceforge.net/htmldoc/gui.html
 
 " Section: Options
 " ----------------

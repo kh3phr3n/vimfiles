@@ -1,6 +1,6 @@
 " File: ~/.vim/vimrc.plugins
 " Description: Vim 3rd-party plugins
-" Documentation: https://github.com/gmarik/vundle.vim
+" Information: https://github.com/vundlevim/vundle.vim
 
 " Initialize Vundle manager
 set rtp+=~/.vim/plugins/vundle.vim

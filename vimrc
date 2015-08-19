@@ -1,6 +1,5 @@
 " File: ~/.vim/vimrc
 " Description: Vim configuration file
-" Documentation: http://vimdoc.sourceforge.net/htmldoc/
 
 " Vim plugin manager (Vundle)
 if filereadable(expand('~/.vim/vimrc.plugins'))

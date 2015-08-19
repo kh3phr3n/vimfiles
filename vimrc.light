@@ -1,6 +1,5 @@
 " File: ~/.vim/vimrc
 " Description: Vim configuration file
-" Documentation: http://vimdoc.sourceforge.net/htmldoc/
 
 " Not VI compatible
 set nocompatible
