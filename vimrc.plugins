@@ -7,7 +7,7 @@ set rtp+=~/.vim/plugins/vundle.vim
 call vundle#begin('~/.vim/plugins')
 
 " Vundle manage Vundle
-Plugin 'gmarik/vundle.vim'
+Plugin 'vundlevim/vundle.vim'
 
 " Vim snippets
 Plugin 'sirver/ultisnips'
