@@ -4,6 +4,9 @@
 " Section: Options
 " ----------------
 
+" GUI color scheme
+colorscheme today-material
+
 " Disable beep and flash
 set vb t_vb=
 " Disable menubar

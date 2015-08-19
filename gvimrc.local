@@ -1,0 +1,9 @@
+" File: ~/.vim/gvimrc.local
+" Description: GVim configuration file
+
+" GUI color scheme
+" colorscheme solarized-light
+
+" Set Font family
+" set guifont=Consolas\ 15
+
