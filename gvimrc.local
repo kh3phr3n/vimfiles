@@ -2,8 +2,8 @@
 " Description: GVim configuration file
 
 " GUI color scheme
-" colorscheme solarized-light
+" colorscheme solarized-dark
 
 " Set Font family
-" set guifont=Consolas\ 15
+" set guifont=Fira\ Mono\ Medium\ 14
 
