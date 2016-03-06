@@ -5,7 +5,7 @@
 " ----------------
 
 " GUI color scheme
-colorscheme solarized-light
+colorscheme solarized-cloudy
 
 " Disable beep and flash
 set vb t_vb=
