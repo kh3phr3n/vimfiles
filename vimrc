@@ -170,6 +170,11 @@ let g:tagbar_width=35
 let g:tagbar_compact=1
 let g:tagbar_iconchars=['▸', '▾']
 
+" Clang options
+let g:clang_auto=0
+let g:clang_c_completeopt='menuone'
+let g:clang_cpp_completeopt='menuone'
+
 " GitGutter options
 let g:gitgutter_sign_added='+'
 let g:gitgutter_sign_removed='-'
