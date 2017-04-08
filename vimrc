@@ -17,6 +17,8 @@ filetype plugin indent on
 " Section: Options
 " ----------------
 
+" Enable listchars
+set list
 " Cursor position
 set ruler
 " Text displaying

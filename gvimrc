@@ -24,8 +24,8 @@ set lines=30 columns=95
 
 " Set Font family
 set antialias
-" set guifont=Consolas\ Bold\ 15
-set guifont=Fira\ Mono\ Medium\ 14
+set guifont=Fira\ Mono\ Medium\ 13
+" set guifont=Iosevka\ Term\ Medium\ 14
 
 " Section: Mappings
 " -----------------
