@@ -1,18 +1,10 @@
 " File: ~/.vim/vimrc
 " Description: Vim configuration file
 
-" Vim plugin manager (Vundle)
+" Vim plugin manager (vim-plug)
 if filereadable(expand('~/.vim/vimrc.plugins'))
     source ~/.vim/vimrc.plugins
 endif
-
-" Not VI compatible
-set nocompatible
-
-" File type settings
-syntax on
-filetype on
-filetype plugin indent on
 
 " Section: Options
 " ----------------

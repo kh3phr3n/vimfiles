@@ -1,45 +1,41 @@
 " File: ~/.vim/vimrc.plugins
 " Description: Vim 3rd-party plugins
-" Information: https://github.com/vundlevim/vundle.vim
+" Information: https://github.com/junegunn/vim-plug
 
-" Initialize Vundle manager
-set rtp+=~/.vim/plugins/vundle.vim
-call vundle#begin('~/.vim/plugins')
-
-" Vundle manage Vundle
-Plugin 'vundlevim/vundle.vim'
+" Initialize vim-plug manager
+call plug#begin('~/.vim/plugins')
 
 " Vim snippets
-Plugin 'sirver/ultisnips'
-Plugin 'honza/vim-snippets'
+Plug 'sirver/ultisnips'
+Plug 'honza/vim-snippets'
 
 " Vim tools
-Plugin 'kh3phr3n/tabline'
-Plugin 'majutsushi/tagbar'
-Plugin 'godlygeek/tabular'
-Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'scrooloose/nerdtree'
-Plugin 'yggdroot/indentline'
-Plugin 'tpope/vim-obsession'
-Plugin 'davidhalter/jedi-vim'
-Plugin 'justmao945/vim-clang'
-Plugin 'scrooloose/syntastic'
-Plugin 'raimondi/delimitmate'
-Plugin 'tpope/vim-commentary'
-Plugin 'kh3phr3n/python-syntax'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'shougo/neocomplete.vim'
-Plugin 'itspriddle/vim-stripper'
+Plug 'kh3phr3n/tabline'
+Plug 'majutsushi/tagbar'
+Plug 'godlygeek/tabular'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'scrooloose/nerdtree'
+Plug 'yggdroot/indentline'
+Plug 'tpope/vim-obsession'
+Plug 'davidhalter/jedi-vim'
+Plug 'justmao945/vim-clang'
+Plug 'scrooloose/syntastic'
+Plug 'raimondi/delimitmate'
+Plug 'tpope/vim-commentary'
+Plug 'kh3phr3n/python-syntax'
+Plug 'airblade/vim-gitgutter'
+Plug 'shougo/neocomplete.vim'
+Plug 'itspriddle/vim-stripper'
 
 " Vim web
-Plugin 'hail2u/vim-css3-syntax'
-Plugin 'othree/html5-syntax.vim'
-Plugin 'pangloss/vim-javascript'
+Plug 'hail2u/vim-css3-syntax'
+Plug 'othree/html5-syntax.vim'
+Plug 'pangloss/vim-javascript'
 
 " Vim colors
-Plugin 'kh3phr3n/today-theme'
-Plugin 'kh3phr3n/solarized-theme'
+Plug 'kh3phr3n/today-theme'
+Plug 'kh3phr3n/solarized-theme'
 
 " End process
-call vundle#end()
+call plug#end()
 
