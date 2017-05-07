@@ -170,6 +170,7 @@ let g:clang_c_completeopt='menuone'
 let g:clang_cpp_completeopt='menuone'
 
 " GitGutter options
+let g:gitgutter_enabled=0
 let g:gitgutter_sign_added='+'
 let g:gitgutter_sign_removed='-'
 let g:gitgutter_sign_modified='~'
@@ -202,7 +203,7 @@ let g:UltiSnipsJumpForwardTrigger='<Tab>'
 let g:UltiSnipsJumpBackwardTrigger='<S-Tab>'
 
 " NeoComplete options
-let g:neocomplete#enable_at_startup=1
+let g:neocomplete#enable_at_startup=0
 let g:neocomplete#enable_smart_case=1
 let g:neocomplete#enable_auto_select=1
 
