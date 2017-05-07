@@ -1,12 +1,8 @@
 " File: ~/.vim/vimrc
 " Description: Vim configuration file
 
-" Not VI compatible
-set nocompatible
-
 " File type settings
 syntax on
-filetype on
 filetype plugin indent on
 
 " Section: Options
@@ -110,11 +106,6 @@ set statusline+=%=L%l/%L:C%c\ %P
 " Toggle listchars symbols
 nnoremap <F2> :set list!<CR>
 
-" Use Ctrl-S for saving
-noremap  <C-S>      :update<CR>
-vnoremap <C-S> <C-C>:update<CR>
-inoremap <C-S> <C-O>:update<CR>
-
 " Section: Autocommands
 " ---------------------
 
@@ -124,10 +115,5 @@ if has('autocmd')
 
     " Change current directory
     autocmd BufEnter * silent! lcd %:p:h
-endif
-
-" Include user's local Vim config
-if filereadable(expand('~/.vim/vimrc.local'))
-    source ~/.vim/vimrc.local
 endif
 

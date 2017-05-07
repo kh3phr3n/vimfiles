@@ -111,20 +111,20 @@ nnoremap <F7> zR
 " Open/Close fold
 nnoremap <2-LeftMouse> za
 
-" Toggle listchars symbols
-nnoremap <F9> :set list!<CR>
-" Toggle Tagbar panel
-nnoremap <F2> :TagbarToggle<CR>
 " Toggle NERDTree panel
 nnoremap <F1> :NERDTreeToggle<CR>
-" Toggle GitGutter signs
-nnoremap <F4> :GitGutterToggle<CR>
+" Toggle Tagbar panel
+nnoremap <F2> :TagbarToggle<CR>
 " Toggle NeoComplete auto
 nnoremap <F3> :NeoCompleteToggle<CR>
-" Toggle indentLine guides
-nnoremap <F8> :IndentLinesToggle<CR>
+" Toggle GitGutter signs
+nnoremap <F4> :GitGutterToggle<CR>
 " Toggle Syntastic checker
 nnoremap <F5> :SyntasticToggleMode<CR>
+" Toggle indentLine guides
+nnoremap <F8> :IndentLinesToggle<CR>
+" Toggle listchars symbols
+nnoremap <F9> :set list!<CR>
 
 " Use Ctrl-S for saving
 noremap  <C-S>      :update<CR>
