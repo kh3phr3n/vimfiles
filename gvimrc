@@ -9,6 +9,8 @@ colorscheme solarized-cloudy
 
 " Disable beep and flash
 set vb t_vb=
+" Disable mouse hiding
+set nomousehide
 " Disable menubar
 set guioptions-=m
 " Disable toolbar
