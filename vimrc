@@ -97,7 +97,7 @@ set listchars=tab:▸\ ,eol:¬,trail:·
 set dictionary+=/usr/share/dict/words
 
 " Statusline (Inspired by statline.vim)
-set statusline+=%<%f%h%m%r\ [%{strlen(&ft)?&ft:'none'}]
+set statusline+=%<%f\ %h%m%r%{gitbranch#name()}[%{strlen(&ft)?&ft:'none'}]
 set statusline+=[%{&fileformat}→%{strlen(&fenc)?&fenc:&enc}]
 set statusline+=%=L%l/%L:C%c\ %P
 
