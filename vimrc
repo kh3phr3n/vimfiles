@@ -6,6 +6,14 @@ if filereadable(expand('~/.vim/vimrc.plugins'))
     source ~/.vim/vimrc.plugins
 endif
 
+" Light theme
+colorscheme solarized-cloudy
+
+" Cursor shapes
+let &t_SI="\<Esc>[6 q"
+let &t_SR="\<Esc>[4 q"
+let &t_EI="\<Esc>[2 q"
+
 " Section: Options
 " ----------------
 
@@ -13,45 +21,42 @@ endif
 set list
 " Cursor position
 set ruler
-" Text displaying
-set nowrap
-" Enable the use of mouse
+" Enable mouse
 set mouse=a
-" Fast terminal connection
+" Fast terminal
 set ttyfast
-" Show (partial) command
-set showcmd
-" Automatically read file
-set autoread
-" Automatically save file
-set autowrite
-" Show matching brackets
+" Highlight brackets
 set showmatch
+" File actions
+set autoread
+set autowrite
 
 " Search features
 set hlsearch
 set incsearch
 set ignorecase
 
-" Not redraw while macros
+" No screen redraw
 set lazyredraw
-" Minimal lines cursor
-set scrolloff=1
 " Enable status line
 set laststatus=2
-" No jump to first character
+" Fix cursor lag
+set ttimeoutlen=0
+" Keep cursor position
 set nostartofline
+" Enable 24-bit color
+set termguicolors
 
-" No backup, swap files
+" No backup files
 set nobackup
 set noswapfile
 set nowritebackup
 
-" Display line number
+" Line numbers
 set number
 set numberwidth=1
 
-" Replace tabs with spaces
+" Indentation
 set expandtab
 set autoindent
 
@@ -60,15 +65,17 @@ set tabstop=4
 set shiftwidth=4
 set softtabstop=4
 
-" Options ~/.viminfo
+" Viminfo file
 set viminfo='20,\"50
-" Everything wraps
+
+" Text wrapping
+set nowrap
 set whichwrap=<,>,[,]
 
 " Toggle paste mode
 set pastetoggle=<F12>
 
-" Levels of indentation
+" No folds closed
 set foldlevel=99
 set foldmethod=indent
 
@@ -76,7 +83,7 @@ set foldmethod=indent
 set encoding=utf-8
 set fileencoding=utf-8
 
-" Line ending characters
+" End-of-line formats
 set fileformats=unix,dos,mac
 " Fold and vertical symbols
 set fillchars=fold:\ ,vert:\|
@@ -89,7 +96,7 @@ set wildmode=longest:full,full
 set pumheight=15
 set completeopt=longest,menuone
 
-" Enable key <Backspace>
+" Allow backspacing
 set backspace=indent,eol,start
 " Tabstops, EOLs and Trails
 set listchars=tab:▸\ ,eol:¬,trail:·
@@ -223,7 +230,7 @@ if has('autocmd')
     " Change current directory
     autocmd BufEnter * silent! lcd %:p:h
 
-    " Python/Django settings
+    " Python-Django settings
     autocmd FileType html   setlocal filetype=html.htmldjango
     autocmd FileType python setlocal filetype=python.django
     autocmd FileType python setlocal completeopt-=preview

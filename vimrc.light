@@ -12,45 +12,38 @@ filetype plugin indent on
 set list
 " Cursor position
 set ruler
-" Text displaying
-set nowrap
-" Enable the use of mouse
+" Enable mouse
 set mouse=a
-" Fast terminal connection
+" Fast terminal
 set ttyfast
-" Show (partial) command
-set showcmd
-" Automatically read file
-set autoread
-" Automatically save file
-set autowrite
-" Show matching brackets
+" Highlight brackets
 set showmatch
+" File actions
+set autoread
+set autowrite
 
 " Search features
 set hlsearch
 set incsearch
 set ignorecase
 
-" Not redraw while macros
+" No screen redraw
 set lazyredraw
-" Minimal lines cursor
-set scrolloff=1
 " Enable status line
 set laststatus=2
-" No jump to first character
+" Keep cursor position
 set nostartofline
 
-" No backup, swap files
+" No backup files
 set nobackup
 set noswapfile
 set nowritebackup
 
-" Display line number
+" Line numbers
 set number
 set numberwidth=1
 
-" Replace tabs with spaces
+" Indentation
 set expandtab
 set autoindent
 
@@ -62,12 +55,14 @@ set softtabstop=4
 " Toggle paste mode
 set pastetoggle=<F1>
 
-" Options ~/.viminfo
+" Viminfo file
 set viminfo='20,\"50
-" Everything wraps
+
+" Text wrapping
+set nowrap
 set whichwrap=<,>,[,]
 
-" Levels of indentation
+" No folds closed
 set foldlevel=99
 set foldmethod=indent
 
@@ -75,7 +70,7 @@ set foldmethod=indent
 set encoding=utf-8
 set fileencoding=utf-8
 
-" Line ending characters
+" End-of-line formats
 set fileformats=unix,dos,mac
 " Fold and vertical symbols
 set fillchars=fold:\ ,vert:\|
@@ -88,7 +83,7 @@ set wildmode=longest:full,full
 set pumheight=15
 set completeopt=longest,menuone
 
-" Enable key <Backspace>
+" Allow backspacing
 set backspace=indent,eol,start
 " Tabstops, EOLs and Trails
 set listchars=tab:▸\ ,eol:¬,trail:·
