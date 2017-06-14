@@ -27,6 +27,7 @@ set mouse=a
 set ttyfast
 " Highlight brackets
 set showmatch
+
 " File actions
 set autoread
 set autowrite
@@ -44,7 +45,7 @@ set laststatus=2
 set ttimeoutlen=0
 " Keep cursor position
 set nostartofline
-" Enable 24-bit color
+" Enable 24-bit colors
 set termguicolors
 
 " No backup files
@@ -111,13 +112,6 @@ set statusline+=%=L%l/%L:C%c\ %P
 " Section: Mappings
 " -----------------
 
-" Close all folds
-nnoremap <F6> zM
-" Open all folds
-nnoremap <F7> zR
-" Open/Close fold
-nnoremap <2-LeftMouse> za
-
 " Toggle NERDTree panel
 nnoremap <F1> :NERDTreeToggle<CR>
 " Toggle Tagbar panel
@@ -133,6 +127,14 @@ nnoremap <F8> :IndentLinesToggle<CR>
 " Toggle listchars symbols
 nnoremap <F9> :set list!<CR>
 
+" Close/Open folds
+nnoremap <F6> zM
+nnoremap <F7> zR
+nnoremap <2-LeftMouse> za
+
+" Ctrl-Space (Omni Completion)
+inoremap <C-@> <C-X><C-O>
+
 " Use Ctrl-S for saving
 noremap  <C-S>      :update<CR>
 vnoremap <C-S> <C-C>:update<CR>
@@ -145,9 +147,9 @@ nnoremap <silent> <C-K> :wincmd k<CR>
 nnoremap <silent> <C-L> :wincmd l<CR>
 
 " Tabs navigation (Normal)
-nnoremap <silent> <C-T> :tabnew<CR>
-nnoremap <silent> <C-N> :tabnext<CR>
-nnoremap <silent> <C-B> :tabprevious<CR>
+nnoremap <silent> <S-T> :tabnew<CR>
+nnoremap <silent> <S-L> :tabnext<CR>
+nnoremap <silent> <S-H> :tabprevious<CR>
 
 " Section: Plugins
 " ----------------
