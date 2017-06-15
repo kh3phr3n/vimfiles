@@ -132,21 +132,21 @@ nnoremap <F6> zM
 nnoremap <F7> zR
 nnoremap <2-LeftMouse> za
 
-" Ctrl-Space (Omni Completion)
+" Omni Completion (C-Space)
 inoremap <C-@> <C-X><C-O>
 
-" Use Ctrl-S for saving
+" Save current buffer
 noremap  <C-S>      :update<CR>
 vnoremap <C-S> <C-C>:update<CR>
 inoremap <C-S> <C-O>:update<CR>
 
-" Splits navigation (Normal)
+" Splits navigation
 nnoremap <silent> <C-H> :wincmd h<CR>
 nnoremap <silent> <C-J> :wincmd j<CR>
 nnoremap <silent> <C-K> :wincmd k<CR>
 nnoremap <silent> <C-L> :wincmd l<CR>
 
-" Tabs navigation (Normal)
+" Tabs navigation
 nnoremap <silent> <S-T> :tabnew<CR>
 nnoremap <silent> <S-L> :tabnext<CR>
 nnoremap <silent> <S-H> :tabprevious<CR>
@@ -237,16 +237,6 @@ if has('autocmd')
     autocmd FileType python setlocal filetype=python.django
     autocmd FileType python setlocal completeopt-=preview
     autocmd FileType python setlocal omnifunc=jedi#completions
-
-    " Omni-completion - CTRL-X_CTRL-O
-    autocmd FileType c          setlocal omnifunc=ccomplete#Complete
-    autocmd FileType sql        setlocal omnifunc=sqlcomplete#Complete
-    autocmd FileType php        setlocal omnifunc=phpcomplete#CompletePHP
-    autocmd FileType css        setlocal omnifunc=csscomplete#CompleteCSS
-    autocmd FileType xml        setlocal omnifunc=xmlcomplete#CompleteTags
-    autocmd FileType html       setlocal omnifunc=htmlcomplete#CompleteTags
-    autocmd FileType ruby,eruby setlocal omnifunc=rubycomplete#Complete
-    autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
 endif
 
 " Include user's local Vim config
