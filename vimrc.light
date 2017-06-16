@@ -36,6 +36,7 @@ set laststatus=2
 set nostartofline
 
 " No backup files
+set viminfo=
 set nobackup
 set noswapfile
 set nowritebackup
@@ -55,9 +56,6 @@ set softtabstop=4
 
 " Toggle paste mode
 set pastetoggle=<F1>
-
-" Viminfo file
-set viminfo='20,\"50
 
 " Text wrapping
 set nowrap

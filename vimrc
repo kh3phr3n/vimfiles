@@ -49,6 +49,7 @@ set nostartofline
 set termguicolors
 
 " No backup files
+set viminfo=
 set nobackup
 set noswapfile
 set nowritebackup
@@ -65,9 +66,6 @@ set autoindent
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
-
-" Viminfo file
-set viminfo='20,\"50
 
 " Text wrapping
 set nowrap
