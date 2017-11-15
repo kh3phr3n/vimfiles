@@ -116,20 +116,17 @@ nnoremap <F1> :NERDTreeToggle<CR>
 nnoremap <F2> :TagbarToggle<CR>
 " Toggle NeoComplete auto
 nnoremap <F3> :NeoCompleteToggle<CR>
-" Toggle GitGutter signs
-nnoremap <F4> :GitGutterToggle<CR>
 " Toggle Syntastic checker
-nnoremap <F5> :SyntasticToggleMode<CR>
+nnoremap <F4> :SyntasticToggleMode<CR>
+" Toggle GitGutter signs
+nnoremap <F5> :GitGutterToggle<CR>
 " Toggle indentLine guides
-nnoremap <F8> :IndentLinesToggle<CR>
+nnoremap <F6> :IndentLinesToggle<CR>
 " Toggle listchars symbols
-nnoremap <F9> :set list!<CR>
+nnoremap <F7> :set list!<CR>
 
-" Close/Open folds
-nnoremap <F6> zM
-nnoremap <F7> zR
+" Toggle fold using mouse
 nnoremap <2-LeftMouse> za
-
 " Omni Completion (C-Space)
 inoremap <C-@> <C-X><C-O>
 
