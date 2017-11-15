@@ -227,11 +227,14 @@ if has('autocmd')
     " Change current directory
     autocmd BufEnter * silent! lcd %:p:h
 
-    " Python-Django settings
-    autocmd FileType html   setlocal filetype=html.htmldjango
-    autocmd FileType python setlocal filetype=python.django
+    " Python settings
     autocmd FileType python setlocal completeopt-=preview
+    autocmd FileType python setlocal filetype=python.django
     autocmd FileType python setlocal omnifunc=jedi#completions
+
+    " HTML-CSS settings
+    autocmd FileType htm,html setlocal filetype=html.htmldjango
+    autocmd FileType css,html setlocal tabstop=2 softtabstop=2 shiftwidth=2
 endif
 
 " Include user's local Vim config
