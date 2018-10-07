@@ -6,8 +6,10 @@ if filereadable(expand('~/.vim/vimrc.plugins'))
     source ~/.vim/vimrc.plugins
 endif
 
-" Light theme
-colorscheme solarized-cloudy
+" Dark theme
+if filereadable(expand('~/.vim/vimrc.onedark'))
+    source ~/.vim/vimrc.onedark
+endif
 
 " Cursor shapes
 let &t_SI="\<Esc>[6 q"
@@ -124,6 +126,8 @@ nnoremap <F5> :GitGutterToggle<CR>
 nnoremap <F6> :IndentLinesToggle<CR>
 " Toggle listchars symbols
 nnoremap <F7> :set list!<CR>
+" Toggle termguicolors mode
+nnoremap <F8> :set termguicolors!<CR>
 
 " Toggle fold using mouse
 nnoremap <2-LeftMouse> za
@@ -234,7 +238,7 @@ if has('autocmd')
 
     " HTML-CSS settings
     autocmd FileType htm,html setlocal filetype=html.htmldjango
-    autocmd FileType css,html setlocal tabstop=2 softtabstop=2 shiftwidth=2
+    autocmd FileType css,html setlocal tabstop=4 softtabstop=4 shiftwidth=4
 endif
 
 " Include user's local Vim config
